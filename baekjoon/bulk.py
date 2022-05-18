@@ -7,11 +7,6 @@ for i in range(n):
 for i in range(n):
     bulk = 1
     for j in range(n):
-        print(i, bulk_list[i][0] < bulk_list[j][0]
-              and bulk_list[i][1] < bulk_list[j][1])
-        print(i, bulk_list[i][0], bulk_list[j][0],
-              bulk_list[i][1], bulk_list[j][1])
         if bulk_list[i][0] < bulk_list[j][0] and bulk_list[i][1] < bulk_list[j][1]:
             bulk += 1
-    result.append(bulk)
-print(result)
+    print(bulk, end=' ')
